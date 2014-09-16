@@ -1,21 +1,28 @@
 [submodule "vendor/OHHTTPStubs"]
 	path = vendor/OHHTTPStubs
 	url = git://github.com/AliSoftware/OHHTTPStubs.git
+	fetchRecurseSubmodules = true
 [submodule "vendor/OCMock"]
 	path = vendor/OCMock
 	url = git://github.com/erikdoe/ocmock
+	fetchRecurseSubmodules = true
 [submodule "vendor/OCHamcrest"]
 	path = vendor/OCHamcrest
 	url = git://github.com/hamcrest/OCHamcrest
+	fetchRecurseSubmodules = true
 [submodule "vendor/appledoc"]
 	path = vendor/appledoc
 	url = git://github.com/tomaz/appledoc.git
+	fetchRecurseSubmodules = true
 [submodule "Bolts-IOS"]
 	path = Bolts-IOS
   	url = git://github.com/BoltsFramework/Bolts-iOS.git
+	fetchRecurseSubmodules = true
 [submodule "vendor/ios-snapshot-test-case"]
 	path = vendor/ios-snapshot-test-case
 	url = git://github.com/facebook/ios-snapshot-test-case.git
+	fetchRecurseSubmodules = true
 [submodule "vendor/xctool"]
 	path = vendor/xctool
 	url = git://github.com/facebook/xctool.git
+	fetchRecurseSubmodules = true
