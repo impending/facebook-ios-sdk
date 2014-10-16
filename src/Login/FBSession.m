@@ -2236,7 +2236,7 @@ static FBSession *g_activeSession = nil;
 
 - (NSString *)description {
     NSString *stateDescription = [FBSessionUtility sessionStateDescription:self.state];
-    return [NSString stringWithFormat:@"<%@: %p, state: %@, loginHandler: %p, appID: %@, urlSchemeSuffix: %@, tokenCachingStrategy:%@, expirationDate: %@, refreshDate: %@, attemptedRefreshDate: %@, permissions:%@>",
+	NSString *resultString = [NSString stringWithFormat:@"<%@: %p, state: %@, loginHandler: %p, appID: %@, urlSchemeSuffix: %@, tokenCachingStrategy:%@, expirationDate: %@, refreshDate: %@, attemptedRefreshDate: %@, permissions:%@>",
             NSStringFromClass([self class]),
             self,
             stateDescription,
@@ -2248,6 +2248,8 @@ static FBSession *g_activeSession = nil;
             self.accessTokenData.refreshDate,
             self.attemptedRefreshDate,
             [self.accessTokenData.permissions description]];
+	
+	return resultString;
 }
 
 #pragma mark -
